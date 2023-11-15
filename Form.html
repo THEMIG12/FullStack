@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Form
+    </title>
+    <style>
+        body {
+            background-color: rgb(200, 200, 162);
+            background-image: url(background_day.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 150px;
+            font-size: 20px;
+        }
+
+        input {
+            background-color: #558855;
+            color: rgb(0, 0, 0);
+            border-width: 10px;
+            border-color: saddlebrown;
+        }
+
+
+        input[type=text] {
+            background-color: rgb(192, 162, 162);
+        }
+
+        input[type=password] {
+            background-color: rgb(192, 162, 162);
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            border-width: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .user,
+        .pass {
+            color: saddlebrown;
+            border-width: 10px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label class="user">Username:</label>
+        <input type="text" class="user" placeholder="Omar" maxlength="20" required /><br><br>
+        <label class="pass">Password:</label>
+        <input type="password" class="pass" maxlength="20" required /><br><br>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Cancel" />
+    </form>
+</body>
+<footer>
+
+</footer>
+
+</html>
