@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS test</title>
+    <script>
+        function onLoad() {
+            const my_elements = document.querySelectorAll("p");
+            // console.log(my_elements)
+            for (let i = 0; i < my_elements.length; i++) {
+                my_elements[i].setAttribute("id", "p" + i);
+                // console.log(my_elements[i].innerHTML)
+            }
+            // const name = my_elements.getAttribute("name")
+            // my_element.setAttribute('disabled','')
+            // my_element.setAttribute('class', 'cls')
+            // const my_id= my_element.getAttribute("id")
+            // alert ("name = "+name +"_my_id = "+my_id) }
+        }
+        function OnButtonChange() {
+            document.getElementById("test").innerHTML = "<h2>Hi</h2>";
+        }
+        function alert_select() {
+            alert(document.getElementById("tsst").value);
+        }
+
+
+    </script>
+</head>
+
+<body onload="onLoad()">
+    <div>
+        <button id="hello" name="my_first_button"> Hello JS</button>
+        <p>Java script 1 </p>
+        <p>Java script 2 </p>
+        <p>Java script 3 </p>
+    </div>
+    <!--<select onchange="selectionChoose()" id="selection" >
+        <option value="Jordan">الأردن</option>
+        <option value="Iraq">العراق</option>
+        </select> -->
+    <div>
+        <h2 id="test">Welcome</h2>
+        <button onclick="OnButtonChange()">Bye</button>
+        <select id="tsst" onchange="alert_select()">
+            <option value="none" selected disabled hidden></option>
+            <option value="Palastine">Palastine</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Egypt">Egypt</option>
+        </select>
+    </div>
+</body>
+
+</html>

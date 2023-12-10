@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS test</title>
+    <script>
+        function OnButtonChange() {
+            document.getElementById("test").innerHTML = "<h2>Hi</h2>";
+        }
+        function alert_select() {
+            alert(document.getElementById("tsst").value);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2 id="test">Welcome</h2>
+        <button onclick="OnButtonChange()">Bye</button>
+        <select id="tsst" onchange="alert_select()">
+            <option value="none" selected disabled hidden></option>
+            <option value="Palastine">Palastine</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Egypt">Egypt</option>
+        </select>
+    </div>
+</body>
+
+</html>

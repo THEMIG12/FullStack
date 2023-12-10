@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS test</title>
+    <script>
+        /*
+        function nameText() {
+            alert("Name entered is:"+ document.getElementById("name").value);
+        }
+        function emailText() {
+            alert("Email entered is:"+ document.getElementById("email").value);
+        }
+        function changeSelectionGender() {
+            alert("Gender Selected is:"+ document.getElementById("gender").value);
+        }
+        function changeSelectionJob() {
+            alert("Job Selected is:"+ document.getElementById("job").value);
+        }
+        */
+        function onClickSubmit() {
+            //alert("Submited");
+            document.getElementById("my_result").innerHTML = "username is: " + document.getElementById("name").value + "<br>" + "Email entered is:" + document.getElementById("email").value + "<br" + "Gender Selected is:" + document.getElementById("gender").value + "<br>" + "Job Selected is:" + document.getElementById("job").value + "<br>";
+        }
+        function myFunction() {
+            //location.replace();
+        }
+    </script>
+</head>
+
+<body>
+    <form action="/JS_test2 results.html" method="get">
+        <input type="text" name="Name" id="name" placeholder="Enter your name" onchange="nameText()"><br>
+        <input type="email" name="Email" id="email" placeholder="Enter your email" onchange="emailText()"><br>
+        <select name="Gender" onchange="changeSelectionGender()">
+            <option value="none" selected disabled hidden></option>
+            <option value="Male" id="gender">
+                Male
+            </option>
+            <option value="Female" id="gender">
+                Female
+            </option>
+        </select>
+        <br>
+        <input type="radio" name="Job" id="job" value="student">Student
+        <input type="radio" name="Job" id="job" value="teacher">Teacher
+        <br>
+        <button onclick="onClickSubmit()" type="submit">Submit</button>
+    </form>
+    <div>
+        <p id="my_result">
+
+        </p>
+    </div>
+</body>
+
+</html>
